@@ -8,9 +8,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Random;
 
-public class DeliveryCard {
+public class DataGenerator {
 
-    private DeliveryCard() {
+    private DataGenerator() {
 
     }
 
@@ -19,7 +19,7 @@ public class DeliveryCard {
     }
 
     public static String generateCity() {
-        var cities = new String[]{"Екатеринбург", "Воронеж", "Тюмень", "Челябинск", "Курган"};
+        var cities = new String[]{"Казань", "Воронеж", "Тюмень", "Челябинск", "Курган"};
         return cities[new Random().nextInt(cities.length)];
     }
 
